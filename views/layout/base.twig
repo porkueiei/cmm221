@@ -1,0 +1,22 @@
+<!DOCTYPE html> <!--ให้รู้ว่าเป็นhtml-->
+<html lang="en">  <!-- lang บอกภาษา คือกำหนดภาษาหลักให้กับเว็บไซต์-->
+<haed>
+	<meta charset="UTF-8"> <!--กำหนดไว้เพื่อให้อ่านภาษาไทยได้-->
+	<title>CMM 19</title> <!--แทบบนเปนไตเตล-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--โหลดcssเข้ามา หรอว่ะ-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/">
+
+	<link rel="stylesheet" href="/assets/main.css">
+
+	{% block stylesheet %} {% endblock %}
+</head>
+<body>
+
+	{% include 'layout/header.twig' ignore missing %}
+
+	{% block content %}
+	{% endblock %}
+
+</body>
+</html>
